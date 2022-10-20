@@ -1,0 +1,36 @@
+{
+    "signup": {
+        "name": "Gabriela Santiago",
+        "cpf": "00000014141",
+        "email": "gabisanti@getnada.com",  
+        "whatsapp": "37999999999",
+        "address": {
+            "postalcode": "04534011",
+            "street": "Rua Joaquim Floriano",
+            "number": "174",
+            "details": "Apto 12",
+            "district": "Itaim Bibi",
+            "city_state": "São Paulo/SP"
+        },
+        "delivery_method": "Moto",
+        "cnh": "cnh-digital.jpg"        
+
+    },
+
+    "cpf_inv": {
+        "name": "Devson Jhonson",
+        "cpf": "000000141AA",
+        "email": "devsonjhonson@getnada.com",
+        "whatsapp": "37999999988",
+        "address": {
+            "postalcode": "04534011",
+            "street": "Rua Joaquim Floriano",
+            "number": "174",
+            "details": "Apto 12",
+            "district": "Itaim Bibi",
+            "city_state": "São Paulo/SP"
+        },
+        "delivery_method": "Moto",
+        "cnh": "cnh-digital.jpg"
+    }
+}

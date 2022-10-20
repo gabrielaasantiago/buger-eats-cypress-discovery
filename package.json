@@ -9,6 +9,7 @@
   "author": "Gabriela A Santiago",
   "license": "MIT",
   "devDependencies": {
-    "cypress": "^10.9.0"
+    "cypress": "^10.9.0",
+    "cypress-file-upload": "^5.0.8"
   }
 }
