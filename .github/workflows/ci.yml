@@ -1,15 +1,9 @@
 name: E2E tests buger-eats app
-on:
-  workflow_dispatch:
+on: [push]
   
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
-    container:
-      image: cypress/browsers:node14.17.0-chrome88-ff89
-      options: --user 1001
-    strategy:
-      fail-fast: false
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -17,31 +11,3 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v4.1.0
-        with:
-          install-command: yarn install
-          wait-on: ${{ secrets.BASE_URL }}
-          wait-on-timeout: 120
-          browser: chrome
-          record: true
-          group: 'UI - Chrome'
-          spec: cypress/e2e/*
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-#   build:
-#   runs-on: ubuntu-latest
-#   steps:
-#     - name: Run a one-line script
-#       run: echo Hello, World!
-      
-  
-#   deploy-dev:
-#   runs-on: ubuntu-latest
-#   environment:
-#     name: dev
-#     url: 'buger-eats-qa.vercel.app'
-#   needs: build
-#   steps:
-#     - name: Run a one-line script
-#       run: echo Hello, World!
